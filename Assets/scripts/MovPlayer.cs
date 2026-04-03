@@ -18,7 +18,7 @@ public class MovPlayer : MonoBehaviour
     [SerializeField] private float forcaDash = 20f;
     [SerializeField] private float tempoDash = 0.2f;
     [SerializeField] private float cooldownDash = 1f;
-    [SerializeField] private Animator animator;
+    [SerializeField] public Animator animator;
 
     private float inputHorizontal;
     private bool podePuloDuplo;
