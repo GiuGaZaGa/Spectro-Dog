@@ -137,7 +137,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -11, y: -9}
+        - {x: 6, y: -4}
+        - {x: 32, y: -4}
+        - {x: 32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: -16, y: -32}
       physicsShape:
       - - {x: -13, y: -13}
         - {x: -5, y: -6}
@@ -193,7 +200,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 31.5, y: 32}
+        - {x: -31.5, y: 32}
+        - {x: -31.5, y: -3}
+        - {x: -3.5, y: -4}
+        - {x: 6.5, y: -7}
+        - {x: 12.5, y: -15}
+        - {x: 13.5, y: -31}
+        - {x: 31.5, y: -32}
       physicsShape:
       - - {x: 31.5, y: 32}
         - {x: -31.5, y: 32}
@@ -292,7 +307,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 32, y: 32}
+        - {x: 13, y: 32}
+        - {x: 13, y: -32}
+        - {x: 32, y: -32}
       physicsShape:
       - - {x: 32, y: 32}
         - {x: 13, y: 32}
@@ -362,7 +381,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 32, y: 5}
+        - {x: 6, y: 4}
+        - {x: -13, y: 10}
+        - {x: -15, y: 31}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
       physicsShape:
       - - {x: 32, y: 5}
         - {x: 17, y: 4}
@@ -392,7 +418,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 32, y: 5}
+        - {x: -32, y: 5}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
       physicsShape:
       - - {x: -32, y: -6}
         - {x: 32, y: -5}
@@ -418,7 +448,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 31.5, y: 32}
+        - {x: 14.5, y: 32}
+        - {x: 13.5, y: 18}
+        - {x: 10.5, y: 11}
+        - {x: 2.5, y: 5}
+        - {x: -31.5, y: 4}
+        - {x: -31.5, y: -32}
+        - {x: 31.5, y: -32}
       physicsShape:
       - - {x: 31.5, y: 32}
         - {x: 13.5, y: 32}
