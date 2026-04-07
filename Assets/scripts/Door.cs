@@ -19,9 +19,23 @@ public class Door : MonoBehaviour
             else
             {
                 Debug.Log("Você precisa de uma chave!");
-                TxtChave.SetActive(true);
+                Invoke("ShowCard", 2f);
+                Invoke("HideCard", 4f);
                 
             }
         }
+    }
+    void ShowCard(){
+
+        Debug.Log("oi");
+        TxtChave.SetActive(true);
+
+    }
+
+    void HideCard(){
+
+        Debug.Log("bu");
+        TxtChave.SetActive(false);
+
     }
 }

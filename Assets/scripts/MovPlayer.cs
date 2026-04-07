@@ -29,6 +29,8 @@ public class MovPlayer : MonoBehaviour
     private bool podeDarDash = true;
     private float gravidadeOriginal;
 
+    public static bool derrotouBoss = false;
+
     void Start()
     {
         fisicaPlayer = GetComponent<Rigidbody2D>();
