@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class BarraVida :MonoBehaviour 
+public class BarraVidafinalBoss :MonoBehaviour 
 {
    [SerializeField]
    private Slider slider;

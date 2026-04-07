@@ -5,6 +5,9 @@ public class dashLifeBOSS : MonoBehaviour
 {
     public GameObject UIcarta;
     public int health = 100;
+    public GameObject damageText;
+    public Transform damageTextPosition;
+    
 
     public void TakeDamage(int damage)
     {

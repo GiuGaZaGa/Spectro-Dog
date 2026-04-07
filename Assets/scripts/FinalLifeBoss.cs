@@ -8,7 +8,7 @@ public class FinalLifeBOSS : MonoBehaviour
     public GameObject portaFinal;
     public int health = 500;
    [SerializeField]
-   private BarraVida barraVida;
+   private BarraVidafinalBoss barraVida;
    public AudioClip finish;
    public AudioSource audioS;
 
