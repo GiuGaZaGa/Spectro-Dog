@@ -5,9 +5,10 @@ using UnityEngine.UI;
 public class FinalLifeBOSS : MonoBehaviour
 {
     public GameObject VenceuUI;
+    public GameObject portaFinal;
     public int health = 500;
    [SerializeField]
-   private BarraVida barraVida;
+   private BarraVidafinalBoss barraVida;
    public AudioClip finish;
    public AudioSource audioS;
 
@@ -27,7 +28,9 @@ public class FinalLifeBOSS : MonoBehaviour
                 if (health <= 0)
 
         {
+            MovPlayer.derrotouBoss = true;
             Die();
+        
         }
     }
 
@@ -39,6 +42,7 @@ public class FinalLifeBOSS : MonoBehaviour
         Invoke("ShowCard", 2f);
         Debug.Log("Voce venceu");
         Invoke("HideCard", 4f);
+
 //  GameObject.Find("MusicPlayer").GetComponent<AudioSource>().Stop();
 //          GetComponent<AudioSource>().clip = finish;
 //         GetComponent<AudioSource>.Play();

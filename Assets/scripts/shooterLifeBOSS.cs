@@ -1,15 +1,22 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class shooterLifeBOSS : MonoBehaviour
 {
     public GameObject UIcarta;
-    public int health = 100;
+    public int health = 100;  
+    public Transform damageTextPosition; 
+    public GameObject damageText;
 
     public void TakeDamage(int damage)
     {
         health -= damage;
         Debug.Log("Vida do inimigo: " + health);
+        GameObject newDamageText = Instantiate(damageText , damageTextPosition.position, Quaternion.identity);
+        newDamageText.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+        Destroy(newDamageText, 1);
+
 
         if (health <= 0)
         {

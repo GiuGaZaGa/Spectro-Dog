@@ -1,15 +1,22 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class dashLifeBOSS : MonoBehaviour
 {
     public GameObject UIcarta;
     public int health = 100;
+    public GameObject damageText;
+    public Transform damageTextPosition;
+    
 
     public void TakeDamage(int damage)
     {
         health -= damage;
         Debug.Log("Vida do inimigo: " + health);
+        GameObject newDamageText = Instantiate(damageText , damageTextPosition.position, Quaternion.identity);
+        newDamageText.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+        Destroy(newDamageText, 1);
 
         if (health <= 0)
         {

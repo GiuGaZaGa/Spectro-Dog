@@ -29,14 +29,21 @@ public class MovPlayer : MonoBehaviour
     private bool podeDarDash = true;
     private float gravidadeOriginal;
 
+    public static bool derrotouBoss = false;
+    private bool porta;
+    private GameObject novaPorta;
+
     void Start()
     {
         fisicaPlayer = GetComponent<Rigidbody2D>();
         gravidadeOriginal = fisicaPlayer.gravityScale;
+        //novaPorta = GameObject.Find("novaPorta");
     }
 
     void Update()
     {
+
+        
         // Se estiver no meio de um dash, não aceita outros inputs de movimento
         if (estaNoDash) return;
 
@@ -72,6 +79,7 @@ public class MovPlayer : MonoBehaviour
         {
             StartCoroutine(ExecutarDash());
         }
+        //novaPosicao();
     }
 
     void FixedUpdate()
@@ -125,4 +133,19 @@ public class MovPlayer : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * distanciaRaycast);
     }
+    // private void novaPosicao()
+    // {
+    //     if(porta = true)
+    //     {
+    //         fisicaPlayer.transform.position = new Vector2(novaPorta.transform.position.x, novaPorta.transform.position.y);
+    //         porta = false;
+    //     }
+    // }
+    // private void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if(collision.gameObject.CompareTag("next"))
+    //     {
+    //         porta = true;
+    //     }
+    // }
 }
