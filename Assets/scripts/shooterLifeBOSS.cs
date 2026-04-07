@@ -4,16 +4,7 @@ using System.Collections;
 public class shooterLifeBOSS : MonoBehaviour
 {
     public GameObject UIcarta;
-    public int health = 100;
-    [SerializeField]
-    private BarraVidafinalBoss barraVida;
-
-    public void Start()
-    {
-        this.barraVida.VidaMaxima = this.health;
-        this.barraVida.Vida = this.health;
-
-    }
+    public int health = 100;   
 
     public void TakeDamage(int damage)
     {
