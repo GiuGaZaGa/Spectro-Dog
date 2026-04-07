@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MovPlayer : MonoBehaviour
 {
-    private Rigidbody2D fisicaPlayer;
+    public Rigidbody2D fisicaPlayer;
 
     [Header("Configurações de Movimento")]
     [SerializeField] private float velocidadePlayer = 8f;
@@ -30,11 +30,14 @@ public class MovPlayer : MonoBehaviour
     private float gravidadeOriginal;
 
     public static bool derrotouBoss = false;
+    private bool porta;
+    private GameObject novaPorta;
 
     void Start()
     {
         fisicaPlayer = GetComponent<Rigidbody2D>();
         gravidadeOriginal = fisicaPlayer.gravityScale;
+        novaPorta = GameObject.Find("novaPorta");
     }
 
     void Update()
@@ -126,5 +129,12 @@ public class MovPlayer : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * distanciaRaycast);
+    }
+    private void novaPosicao()
+    {
+        if(porta = true)
+        {
+            fisicaPlayer.transform.position = new Vector2(novaPorta.transform.position.x, novaPorta.transform.position.y);
+        }
     }
 }
