@@ -19110,11 +19110,11 @@ PrefabInstance:
     - target: {fileID: 2109335726492821391, guid: 6fd6372565dd33546982eb197a959628, type: 3}
       propertyPath: damageText
       value: 
-      objectReference: {fileID: 7374742388724866890, guid: 5db580c0609ed0a49b43696fe31dda04, type: 3}
+      objectReference: {fileID: 6892747791865918307, guid: dc3b488a3db378940ac0fc1032d25074, type: 3}
     - target: {fileID: 2109335726492821391, guid: 6fd6372565dd33546982eb197a959628, type: 3}
       propertyPath: damageTextPosition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2067244658}
     - target: {fileID: 5068450563280720364, guid: 6fd6372565dd33546982eb197a959628, type: 3}
       propertyPath: m_Name
       value: DashBOSS
@@ -19161,7 +19161,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5141545977827712306, guid: 6fd6372565dd33546982eb197a959628, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2067244658}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fd6372565dd33546982eb197a959628, type: 3}
 --- !u!1 &1742448470
@@ -19440,6 +19443,11 @@ Transform:
   - {fileID: 659859719}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1790593657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5141545977827712306, guid: 6fd6372565dd33546982eb197a959628, type: 3}
+  m_PrefabInstance: {fileID: 1712538165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1800049430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20145,6 +20153,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8362720962037709577, guid: 86cf452046951e54580df0c1024873ad, type: 3}
   m_PrefabInstance: {fileID: 2041273114}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2067244657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067244658}
+  m_Layer: 7
+  m_Name: PositionTxtDamage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2067244658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067244657}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790593657}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078522458
 GameObject:
   m_ObjectHideFlags: 0
