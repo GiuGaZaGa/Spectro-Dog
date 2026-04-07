@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MovPlayer : MonoBehaviour
 {
-    public Rigidbody2D fisicaPlayer;
+    private Rigidbody2D fisicaPlayer;
 
     [Header("Configurações de Movimento")]
     [SerializeField] private float velocidadePlayer = 8f;
@@ -37,11 +37,13 @@ public class MovPlayer : MonoBehaviour
     {
         fisicaPlayer = GetComponent<Rigidbody2D>();
         gravidadeOriginal = fisicaPlayer.gravityScale;
-        novaPorta = GameObject.Find("novaPorta");
+        //novaPorta = GameObject.Find("novaPorta");
     }
 
     void Update()
     {
+
+        
         // Se estiver no meio de um dash, não aceita outros inputs de movimento
         if (estaNoDash) return;
 
@@ -77,6 +79,7 @@ public class MovPlayer : MonoBehaviour
         {
             StartCoroutine(ExecutarDash());
         }
+        //novaPosicao();
     }
 
     void FixedUpdate()
@@ -130,11 +133,19 @@ public class MovPlayer : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * distanciaRaycast);
     }
-    private void novaPosicao()
-    {
-        if(porta = true)
-        {
-            fisicaPlayer.transform.position = new Vector2(novaPorta.transform.position.x, novaPorta.transform.position.y);
-        }
-    }
+    // private void novaPosicao()
+    // {
+    //     if(porta = true)
+    //     {
+    //         fisicaPlayer.transform.position = new Vector2(novaPorta.transform.position.x, novaPorta.transform.position.y);
+    //         porta = false;
+    //     }
+    // }
+    // private void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if(collision.gameObject.CompareTag("next"))
+    //     {
+    //         porta = true;
+    //     }
+    // }
 }
