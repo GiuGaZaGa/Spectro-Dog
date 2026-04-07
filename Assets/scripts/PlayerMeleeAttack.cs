@@ -62,6 +62,10 @@ public class PlayerMeleeAttack : MonoBehaviour
             {
                 bossShooter.TakeDamage(damage);
             }
+            else if (hit.collider.TryGetComponent<FinalLifeBOSS>(out FinalLifeBOSS finalBoss))
+            {
+                finalBoss.TakeDamage(damage);
+            }
 
             // Destrói a bala após atingir qualquer um dos dois
         
