@@ -1,8 +1,10 @@
 using UnityEngine;
+using TMPro;
 
 public class Door : MonoBehaviour
 {
     public string keyNeeded; // Deve ser igual ao keyName da chave
+    public GameObject TxtChave;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,6 +19,8 @@ public class Door : MonoBehaviour
             else
             {
                 Debug.Log("Você precisa de uma chave!");
+                TxtChave.SetActive(true);
+                
             }
         }
     }
