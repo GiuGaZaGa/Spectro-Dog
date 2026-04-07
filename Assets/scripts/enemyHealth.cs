@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
         health -= damage;
         Debug.Log("Vida do inimigo: " + health);
         GameObject newDamageText = Instantiate(damageText , damageTextPosition.position, Quaternion.identity);
-        newDamageText.GetComponentInChildren<Text>().text = damage.ToString();
+        newDamageText.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
         Destroy(newDamageText, 1);
 
         if (health <= 0)

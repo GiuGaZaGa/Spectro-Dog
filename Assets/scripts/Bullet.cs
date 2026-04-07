@@ -54,6 +54,10 @@ public class Bullet : MonoBehaviour
         {
             bossShooter.TakeDamage(damage);
         }
+         else if (collision.TryGetComponent<FinalLifeBOSS>(out FinalLifeBOSS finalBoss))
+        {
+            finalBoss.TakeDamage(damage);
+        }
 
         // Destrói a bala após atingir qualquer um dos dois
         Destroy(gameObject); 
